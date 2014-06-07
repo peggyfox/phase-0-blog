@@ -5,15 +5,10 @@ background: blue
 }
 
 #header {
-color: blue;
 background:#FFFFFF;
 width: 700;
 height:40x;
 padding:5px;
-}
-
-#CPS {
-font-family: "Georgia"
 }
 
 #sidebar {
@@ -26,10 +21,6 @@ padding:1%;
 margin-top: 1%;
 margin-right:1%;
 margin-bottom:1%;
-}
-
-#sideimage {
-width: 150px;
 }
 
 #content {
@@ -57,8 +48,8 @@ color:#3D3D3D;
 
 	  
 #footer {
-color: blue;
-background:#FFFFFF;
+color: grey;
+background:;
 clear:both;
 width: 700;
 height:40x;
