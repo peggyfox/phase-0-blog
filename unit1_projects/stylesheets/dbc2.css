@@ -1,0 +1,65 @@
+html {
+margin:0;
+padding:5px;
+background: blue
+}
+
+#header {
+color: blue;
+background:#FFFFFF;
+width: 700;
+height:40x;
+padding:5px;
+}
+
+#CPS {
+font-family: "Georgia"
+}
+
+#sidebar {
+float:left;
+background: #FFFFFF;
+color:grey;
+width: 17%;
+height:100%;
+padding:1%;
+margin-top: 1%;
+margin-right:1%;
+margin-bottom:1%;
+}
+
+#sideimage {
+width: 150px;
+}
+
+#content {
+float:right;
+background: #FFFFFF;
+color:navy;
+width: 77%;
+padding: 1%;
+margin-top: 1%;
+margin-left:1%;
+margin-bottom:1%;
+}
+#content a:link {color:blue}
+#content a:hover {color:green}
+
+.thumbnail {
+float:left;
+position:relative;}
+.caption {
+position: absolute;
+bottom: 400px;
+left:100px;
+color:#3D3D3D;
+}
+
+	  
+#footer {
+color: blue;
+background:#FFFFFF;
+clear:both;
+width: 700;
+height:40x;
+margin-top:1%}

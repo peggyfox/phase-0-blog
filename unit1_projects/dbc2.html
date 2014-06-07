@@ -1,46 +1,64 @@
-<!--Doctype, head, title, and body 
-#Add one heading of each level (h1-h6)
-#2-3 short paragraphs
-#Some italic and bold text
-#Links that open in the same window, a new window and link to #an e-mail address.
-#Images and an image that's also a link 
-#Line break
-#Unordered list and an ordered list  -->
+<!--Format your header, content, sidebar, and footer
+Add padding, borders, and margins
+Center your content area in the browser
+Add width and height to divs and give them ids
+Psuedo-classes for links
+Positioning
+A div that contains an image and a caption, and position the caption absolutely overtop the image.
+Float side bar and content area-->
 
 <!doctype html> 
 <html>
 	<head>
-		<link type="text/css" rel="stylesheet" href="stylesheets/dbc1.css"/>
+		<link type="text/css" rel="stylesheet" href="stylesheets/dbc2.css"/>
 		<title>CPS Data</title>
 	</head>
+	
 	<body>
-		<h1><strong><font color="blue">Chicago Public Schools Data Guide</font></strong></h1>
-		<h4><em>The ultimate resource for finding Chicago Public Schools data </em><h4>
-
-	<img src="http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/2/7/1391782615974/financial-chart-made-with-009.jpg" />
-
-		<h2>Highlights</h2>
-		<ol>
-			<li> Boston College Undergrad </li>
-			<li> Michigan Tech University Masters of Science in Forestry</li>
-			<li> Peace Corps in Ecuador 2010-2012 </li>
-			<li> Current: Data Strategist at Chicago Public Schools</li>
-		</ol>
-
-		<h5>Quotes <h5>
+	<div id="container">
+		<div id="header">
+			<center><h1><strong><span id="CPS">Chicago Public Schools</span> Data Guide</font></strong></h1>
+			<h4><em>The ultimate resource for finding <span id="CPS">Chicago Public Schools</span> data </em><h4></center>
 			
-			<p> “Success consists of going from failure to failure without loss of enthusiasm.” <em> <br>- Winston Churchill</em> </p>
+		</div>
+		
+		<div id="sidebar">
+		<h2> I am a firm believer in the people. If given the truth, they can be depended upon to meet any national crisis. 
+		The great point is to bring them the real facts.<em><br> <br>- Abraham Lincoln </em></h2>
 			
-			<p> “Autumn is a second spring when every leaf is a flower.” <em> <br>- Albert Camus </em> </p>
+		</div>
+		
+		<div id="content">
+		<h4> <span id="CPS">Chicago Public Schools </span>tracks key metrics for students and schools across the school district.
+				Schools are rated according to their school-level metrics.  These metrics and the school rates are provided in Annual Reports.
+				School-level metrics are also provided in download-able spreadsheets.</h4>
+		<br>
+		<h3>Annual Reports</h3>
+			<h4 class="report_type">School Progress Reports</h4>
+				<p class="report_desc">The School Progress Report contains key metrics for the school with two years of data for most metrics.
+				Metrics include test score national attainment percentiles and growth percentiles, graduation rates, college enrollment rates, 
+				dropout rates, and attendance rates. The report also includes the results of the <a href="https://illinois.5-essentials.org/2013/">
+				5Essentials Survey</a>, which is administered to students, parents, and teachers at the school each year.</p>
+				<p class="report_location">The School Progress Report is located on each school's CPS school page under Progress Reports.  This page can be accessed by searching
+				the school on <a href="http://www.cps.edu/schools/find_a_school/pages/findaschool.aspx">Find a School</a>.
+		
+			<h4 class="report_type">Performance Policy and School Quality Rating Policy (SQRP)</h4>
+				<p class="report_desc">Previous to the 2013-2014 School Year, schools in CPS were rated on the "Performance Policy".  
+					Schools received a rating of Level 1, 2, or 3, and this rating determined the degree to which the School Board could 
+					intervene in the operation and administration of the school.  In the 2013-2014 a new rating system, called the "School Quality	
+					Rating Policy" (SQRP) was implemented.  Schools will now be rated as Tier 1 through Tier 5.  No schools have yet to be rated
+					according to the new policy.
+				<p class="report_location">The Performance Policy is located on each school's CPS school page under Reports.  This page can be accessed by searching
+				the school on <a href="http://www.cps.edu/schools/find_a_school/pages/findaschool.aspx">Find a School</a>.
 			
-			<p> “The best thing one can do when it's raining is to let it rain.” <em> <br>- Stephen Covey </em> </p>
-	<div class = "Contact">	
-		<h6>Contact</h6>
-			<ul>
-				<li><a href="mailto:fox.peggy.com" target="blank">fox.peggy@gmail.com</a></li>
-				<li> <a href="www.linkedin.com/in/peggyfox1/" target="_blank">LinkedIn</a></li>
-				<li>Twitter: @PFoxUP</li>
-			</ul>
-	</div>
-		<a href="http://devbootcamp.com/"><img src="http://4.bp.blogspot.com/-kj2WjSC7ygY/UtYPCf0zByI/AAAAAAAAABI/GdhdtE694ro/s1600/keep-calm-cause-this-is-just-the-beginning.png" /></a>
+			<div class="thumbnail">
+			<img src= "http://action.aft.org/c/468/images/CPS_NewNetworks_OldNetworks%20for%20newsletter.jpg"/>
+			<div class="caption"> <h5> <strong>Map posted on 11/18/2013 by Sarah Hainds, Chicago Teachers Union Researcher</strong></h5> </div>
+			</div>
+		</div>
+		
+		<div id= "footer">
+		<h3>The content on this page is practice with DevBootcamp. Last updated on June 6th by Peggy Fox</h3>
+		</div>
+	</body>
 </html>
