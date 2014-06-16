@@ -1,0 +1,9 @@
+.code {background-color: lightgrey; font:white;padding:10px;}
+
+#block .post_images {width:100px;
+	display:block;
+	;}
+
+#inline .post_images {width:100px;
+	display:inline;
+	;}

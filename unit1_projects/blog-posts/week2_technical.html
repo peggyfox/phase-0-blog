@@ -1,53 +1,66 @@
 <!doctype html> 
 <html>
 	<head>
-		<link type="text/css" rel="stylesheet" href="stylesheets/blog3.css"/>
-		<title>Website Analysis</title>
+	<link type="text/css" rel="stylesheet" href="stylesheets/solochallenge2.css"/>
+	<link type="text/css" rel="stylesheet" href="stylesheets/week2_technical.css"/>
+		<title>Inline v. Block Display</title>
 	</head>
 	
 	<body>
-	<div id="container">
-		<div id="header">
-			<h2 class="arrows"><center> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<< </center></h2>
-		
+	<div id="header">
+			<img src="https://lh5.googleusercontent.com/-uwtFvvmFC8k/U5ztEaHcdTI/AAAAAAAABA4/AWONe-YMnFI/w980-h98-no/Slide1.jpg" />
 		</div> <!--end of header div-->
+
+		<div id="container">
 		
 		<div id="sidebar">
-		<img id="sideimage" src="https://lh3.googleusercontent.com/-0S54vPvOk1I/UsSuAxBGvYI/AAAAAAAAA6c/vy6kvBfVsIc/s874-no/IMG_0462+-+Copy.JPG"/>
-		<h4><em>This blog consists of cultural and technical reflections as I progress through </em><a href="devbootcamp.com">Dev Bootcamp</a>.</h4>
-	
+			<div id="sidebar_img"> 
+				<img class="portrait" src="https://lh3.googleusercontent.com/-0S54vPvOk1I/UsSuAxBGvYI/AAAAAAAAA6c/vy6kvBfVsIc/s874-no/IMG_0462+-+Copy.JPG"/>
+			</div> 
+			<div id="bio">
+				<p>
+				<em>This blog consists of cultural and technical reflections as I progress through </em><a href="http://www.devbootcamp.com">Dev Bootcamp</a>.
+				</p>
+
+			</div>
 		</div> <!--end of sidebar div-->
 		
 		<div id="content">
 		<span class="arrow_bullet">></span>
-		<span class="post_title">Website Analysis</span>
+		<span class="post_title">Display: Inline v. Block</span>
 		<br>
-		<span class= "tab" class="post_date">June 6, 2014</span>
-		<p>
-		<span class="post_content"> <a href="www.ted.com">TED</a> // <a href="www.smittenkitchen.com">Smitten Kitchen</a> // <a href="www.pinterest.com">Pinterest</a>
+		<span class= "tab" class="post_date">June 15, 2014</span>
+		<p> <span class="post_content"><em>Inline display<em>indicates that an element will be displayed in the same line as another element.  Block display indicates that the element will be displayed on the next line down. </span></p>
 		<br>
-		I think these three websites stand out as my favorites because they are each successful in presenting information through a visual medium, rather than through text; TED (video), Pintrest (image-posts with short descriptions), and Smitten Kitchen (food photography + recipes). I think the reason they are successful is because their websites have a very clean look.  The viewer is able to focus on the content without distraction. </p>
-		<p>The strength of each of these three websites is that they have a very clean look.  How do they accomplish this?</p>
-		<ol>
-			<li>White space & background: structurally each of these sites has uses the color white as a main component, either in the background (TED and Smitten Kitchen) or in their content.</li>
-			<li>“Bright”: because of the white space, each of the sites appears bright instead of dark or dull.</li>
-			<li>Content is centered on the page.  Two of the sites have an approximately 100 pixel border and each side of the centered content.  This has the affect of drawing your eye directly to the content.</li>
-			<li>Dark grey font: All of the sites primarily use dark grey font for headers and navigation-related elements.  It seems to help the site look more modern and the white space to not appear as stark.</li>
-			<li>Little-to-no header:  On Smiten Kitchen the content begins at the top of the page.  TED has a very small logo on its header and the content begins immediately below it.  Pinterest also has a small logo in the center of the header, with the search bar to the left and the profile bar  to the right also in the header.</li>
-			<p>Due to the clean look, each of the sites has a very light (as in weight) feel.  They do not feel dark and heavy, rather they are bright and agile.  The content “pops” and feels likes its coming off the screen, rather than stuck to it.  They are also very easy to navigate, which contributes to a fluid browsing experience.</p>
-			<p>What I like about these websites is that the content on each provides me with ideas to incorporate in my own life.  From watching TED talks, I receive insights into modern life.  From Smitten Kitchen, I not only find delicious and trust-worthy recipes, but the accompanying photos help me visualize how the preparation show look at each step.  From Pintrest, I get ideas about clothing or decorating that help me make my surrounding more beautiful.  That old tennis racket I made into a place to hang earrings and necklaces?  Pintrest-inspired.  None of these sites sell anything, rather they provide me with tools to seek out what I need.</p>
-			<p>Ultimately, each of these sites leaves me feeling inspired after I have spent some time on them - which is why I don’t normally spend much time on them at all.  I get inspired to stop surfing the web and go do or cook or make something.</p>
+		<span class="subheader"> Uses
+		</span>
+		<p>Inline is considered useful for small pieces of content, such as a few words.  It can also be useful for images, icons, or buttons (such as navigation) that you'd like to display on the same line. In the case of inline, dimensions are meaningless.  Spans are by default set to display inline.</p>
+		<p>Block is used to ensure that content appears on the next line.  Dimensions (width and height) can be specified.  Divs are by default set to disply block.
+		<br>
+		<br>
+		<span class="subheader"> Example: Block
+		</span>
+		<p>The code:</p>
+		<p><span class="code">.post_images: {display:block}</span></p>
+		<p>The display:</p>
+		<div id="block"><img class="post_images" src="http://t1.gstatic.com/images?q=tbn:ANd9GcTkKYj5BZXbrQF2_lmQg-LJTQFvAs2z2rlWnPsmtwPaGOS31sfU"/><img class="post_images" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvk5DG649iWvtT4sOYv5oOqutdxRD7p1QK-y2sL22rxFaPTd73Pw"/></div>
+
+		<br>
+		<br>
+		<span class="subheader"> Example: Inline
+		</span>
+		<p>The code:</p>
+		<p><span class="code">.post_images: {display:inline}</span></p>
+		<p>The display:</p>
+		<div id="inline"><img class="post_images" src="http://t1.gstatic.com/images?q=tbn:ANd9GcTkKYj5BZXbrQF2_lmQg-LJTQFvAs2z2rlWnPsmtwPaGOS31sfU"/><img class="post_images" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvk5DG649iWvtT4sOYv5oOqutdxRD7p1QK-y2sL22rxFaPTd73Pw"/></div>
 
 
-
-
-		
 		</div> <!--end of content div-->
 
 
 		<div id= "footer">
-			<h2 class="arrows"><center> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<< </center></h2>
-		<h5>Last updated on June 6th by Peggy Fox</h5>
+			<img src="https://lh5.googleusercontent.com/-uwtFvvmFC8k/U5ztEaHcdTI/AAAAAAAABA4/AWONe-YMnFI/w980-h98-no/Slide1.jpg" />
+		<h5>Last updated on June 15th by Peggy Fox</h5>
 		</div><!--end of footer div-->
 	</div><!--end of container div-->
 	</body>
