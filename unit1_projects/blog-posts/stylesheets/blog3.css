@@ -94,12 +94,3 @@ margin-right:5%;
 margin-bottom:1%;
 margin-left:5%;
 }
-
-@media screen and (max-width: 460px) {
-.arrow_outer {display:none;}
-.arrow_mid {display: none;}
-}
-
-@media screen and (min-width: 461px) and (max-width: 800px) {
-.arrow_mid {display: none;}
-}
