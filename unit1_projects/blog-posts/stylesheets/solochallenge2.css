@@ -64,6 +64,8 @@ padding:5px;
 }
 
 #content a:link {color:grey}
+#content a:active {color:grey}
+#content a:visited {color:grey}
 #content a:hover {color:lightgrey}
 
 .break {color: #E60000;
