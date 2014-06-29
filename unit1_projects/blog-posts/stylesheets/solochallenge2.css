@@ -29,7 +29,6 @@ margin: 0 auto;
 #sidebar_img img {max-width:200px; 
 	border-radius:10px;
 	text-align: center;
-	border:35px solid lightgrey;
 	padding:15px;
 	background-color:white;
 	}	
@@ -44,11 +43,8 @@ margin: 0 auto;
 	border-radius: 10px}
 
 #bio p {max-width:200px; 
-	border-radius:10px;
 	text-align: center;
-	border:35px solid #E60000;
 	padding:15px;
-	background-color:white;
 	}	
 
 
