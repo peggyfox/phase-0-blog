@@ -1,0 +1,108 @@
+<!doctype html> 
+<html>
+	<head>
+	<link type="text/css" rel="stylesheet" href="stylesheets/solochallenge2.css"/>
+		<title>Each v. Map</title>
+	</head>
+	
+	<body>
+	<div id="header">
+		
+		</div> <!--end of header div-->
+
+		<div id="container">
+		
+		<div id="sidebar">
+			<div id="sidebar_img"> 
+				<img class="portrait" src="https://lh3.googleusercontent.com/-0S54vPvOk1I/UsSuAxBGvYI/AAAAAAAAA6c/vy6kvBfVsIc/s874-no/IMG_0462+-+Copy.JPG"/>
+			</div> 
+			<div id="bio">
+				<p>
+				<em>This blog consists of cultural and technical reflections as I progress through </em><a href="http://www.devbootcamp.com">Dev Bootcamp</a>.
+				</p>
+
+			</div>
+		</div> <!--end of sidebar div-->
+		
+		<div id="content">
+		<span class="arrow_bullet">></span>
+		<span class="post_title">Enumberables: Each v. Map</span>
+		<br>
+		<span class= "tab" class="post_date">June 29, 2014</span>
+		<p> <span class="post_content">As a novice Ruby programmer-in-training, I'm challenged to write new methods every week.  This often involves research difference pieces of my potential solution to understand how I might arrive at my desired end result.  This week in my research, I came across #map.  At first glance, it seemed to basically be the same as #each.  Upon a closer look, there is a key difference between the two.</span></p>
+		<br>
+		<span class="subheader"> Each v. Map
+		</span>
+		<p>The essential difference between each and map is that map will actually alter an array, wheras each requires each does not.  Both #each and #map only function within the block in which their being used.  Therefore, even though #map may make changes to the array, the changes are only within to the block within that method.</p>
+		<p>Block is used to ensure that content appears on the next line.  Dimensions (width and height) can be specified.  Divs are by default set to disply block.</p>
+		<span class="subheader"> Example code
+		</span>
+
+		<p>First, define an array:</p>
+		<span class="block">
+			<p>array = [1,2,3] <br>
+			<em>=> [1, 2, 3]</em></p>
+		</span>
+
+		<p>Next, lets define a method using each</p>
+		<span class="block">
+			<p>def add_each(array) <br>
+				array.each {|x| x+2}<br>
+				end <br>
+				<br>
+				add_each(array) <br>
+			<em>=> [1, 2, 3]</em></p>
+		</span>
+
+		<p>Let's check on our array.  What is it defined as?</p>
+		<span class="block">
+			<p>array<br>
+			<em>=> [1, 2, 3]</em></p>
+		</span>
+
+		<p>Now, lets define a method using each, but this time use puts</p>
+		<span class="block">
+			<p>def add_each(array) <br>
+				array.each {|x| puts x+2}<br>
+				end <br>
+				<br>
+				add_each(array) <br>
+			<em>=> 3 <br>
+				   4 <br>
+				   5 <br>
+				   [1, 2, 3]</em></p>
+		</span>
+
+		<p>You see the method is returning the value of each of the numbers in our original array +2.  However, it is still showing that array = [1,2,3]</p>
+		<span class="block">
+			<p>array<br>
+			<em>=> [1, 2, 3]</em></p>
+		</span>
+
+		<p>Last, lets define a method using #map.  We will use the exact same format as our first #each method.</p>
+		<span class="block">
+			<p>def add_map(array) <br>
+				array.map {|x| x+2}<br>
+				end <br>
+				<br>
+				add_map(array) <br>
+			<em>=> [3, 4, 5]</em></p>
+		</span>
+
+		<p>Now, the method is returning the array with the numbers +2.  Let's check on our array, though.  Will it return array = [3,4,5]?</p>
+		<span class="block">
+			<p>array<br>
+			<em>=> [1, 2, 3]</em></p>
+		</span>
+
+		<p>Nope! That's because #each and #map are only working on the blocks within the method that they are being run.  The changes are not to the value of the variable itself outside of the method.</p>
+
+		</div> <!--end of content div-->
+
+
+		<div id= "footer">
+
+		</div><!--end of footer div-->
+	</div><!--end of container div-->
+	</body>
+</html>
