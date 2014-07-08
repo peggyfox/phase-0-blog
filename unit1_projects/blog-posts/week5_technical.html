@@ -1,0 +1,107 @@
+<!doctype html> 
+<html>
+	<head>
+	<link type="text/css" rel="stylesheet" href="stylesheets/solochallenge2.css"/>
+		<title>Class: Methods</title>
+	</head>
+	
+	<body>
+	<div id="header">
+		
+		</div> <!--end of header div-->
+
+		<div id="container">
+		
+		<div id="sidebar">
+			<div id="sidebar_img"> 
+				<img class="portrait" src="https://lh3.googleusercontent.com/-0S54vPvOk1I/UsSuAxBGvYI/AAAAAAAAA6c/vy6kvBfVsIc/s874-no/IMG_0462+-+Copy.JPG"/>
+			</div> 
+			<div id="bio">
+				<p>
+				<em>This blog consists of cultural and technical reflections as I progress through </em><a href="http://www.devbootcamp.com">Dev Bootcamp</a>.
+				</p>
+
+			</div>
+		</div> <!--end of sidebar div-->
+		
+		<div id="content">
+		<span class="arrow_bullet">></span>
+		<span class="post_title">Using Local Methods in Classes</span>
+		<br>
+		<span class= "tab" class="post_date">July 6, 2014</span>
+		<p> <span class="post_content">This week in DBC we had our formal introduction to classes.  We saw them last week in one of our challenges and we did some work with them (again, without the formal introduction) when learning JavaScript.  Learning classes has greatly expanded my toolset and my ability to tackle more complex challenges.</span></p>
+		
+		<p>The beauty of Classes is that it allows you to treat variables as complex objects with multiple properties and capabilities.  It is rare that one variable would have the ability to take one action (or method) and that&#39s it.  With local methods within classes, we can assign and combine various actions to an object.  While we can build some complexity into our code without classes, it often requires using a number of nested if/else statements, whereas the use of multiple methods within one class allows us to write cleaner code that can be broken apart more easily.</p>
+
+		<p>My background is in data analysis in the education sector, so this is where I&#39ll draw from for this example.  When analyzing data, it is rare that I would ever perform just one calculation on a dataset.  It is also rare that I could use my dataset it its raw form.  Normally, I would need to perform a transformation on the data so that I could begin to work with it, and then I would run my analysis.  When working with student data, especially their attendance and grades, this information was constantly changing, so any analysis would require me to download my data-set in real-time, transform it, and then perform some analysis based on what was needed or requested at the given moment.</p>
+
+		<p>Let&#39s run through an example using student attendance data.  I&#39m going to super-simplify this, just to show the different ways methods can be used with classes.  In this example, I run a few different sample analyses to calculate quarter, semester, and annual attendance rates, and to compare quarterly rates.</p>
+
+
+		<span class="subheader"> Example code **This blog post is a work in progress as have time to perfect the code!**
+		</span>
+			
+		<p>First,  I define my dataset called daily attendance which is a hash that for each day of the school year, there is a key: value pair for the total days attended by all students and the days enrolled by all students.  See the below sample format for the first two days of school.  </p>
+		<span class="block">
+			<p>array = [1,2,3] <br>
+			<em>=> [1, 2, 3]</em></p>
+		</span>
+
+		<p>Next, lets define a method using each</p>
+		<span class="block">
+			<p>daily_attendance = {1=> {total_days_attended: 800, total_days_enrolled: 1000}, 2=> {total_days_attended: 900, total_days_enrolled: 1000}}</p>
+		</span>
+
+		<p>Next, we&#39ll create our class and define the initialize method with our daily_attendance input.</p>
+		<span class="block">
+			<p>Class Attendance
+		<br>
+			def initialize(daily_attendance)
+		<br>
+			@daily_attendance = daily_attendance
+		<br>
+			end</p>
+		</span>
+
+		<p>Then, we can perform calculations to determine quarterly attendance.</p>
+		<span class="block">
+			<p>def quarter_1
+			<br>
+			//this method will, for each day from the first to the 45th day of school, sum the total days attended and then sum the total days enrolled, then the average of the two will be calculated.  The value will be stored in a new hash called @quarterly//
+			<br>
+			end 
+			<br>
+			<br>
+			def quarter_2
+			<br>
+			// this method will far each day from the 46th to the 90th day of school perform the same calculation as for quarter_1.  The result will be added to the @quarterly hash//
+			<br>
+			end</p>
+		</span>
+
+		<p>After computing at least to quarters of attendance, we can determine which of the two has the highest.</p>
+		<span class="block">
+			def highest_quarterly
+			<br>
+			// this hash will output the key:value pair with the highest quarterly attendance rate//
+			<br>
+			end
+			</p>
+		</span>
+
+		<p>Finally, we will close our class method.</p>
+		<span class="block">
+			<p>end</p>
+		</span>
+
+		<p>The benefit of using a Class in this case is clear: we are able to update our dataset, then use the methods to perform calculations on the class.  We do not have to perform each of the methods every time, but we can build on them over time and call different pieces of the method as required by our analysis.</p>
+
+		</div> <!--end of content div-->
+
+
+		<div id= "footer">
+
+		</div><!--end of footer div-->
+	</div><!--end of container div-->
+	</body>
+</html>
