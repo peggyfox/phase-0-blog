@@ -1,0 +1,97 @@
+<!doctype html> 
+<html>
+	<head>
+	<link type="text/css" rel="stylesheet" href="stylesheets/solochallenge2.css"/>
+		<title>Classes v. Modules</title>
+	</head>
+	
+	<body>
+	<div id="header">
+		
+		</div> <!--end of header div-->
+
+		<div id="container">
+		
+		<div id="sidebar">
+			<div id="sidebar_img"> 
+				<img class="portrait" src="https://lh3.googleusercontent.com/-0S54vPvOk1I/UsSuAxBGvYI/AAAAAAAAA6c/vy6kvBfVsIc/s874-no/IMG_0462+-+Copy.JPG"/>
+			</div> 
+			<div id="bio">
+				<p>
+				<em>This blog consists of cultural and technical reflections as I progress through </em><a href="http://www.devbootcamp.com">Dev Bootcamp</a>.
+				</p>
+
+			</div>
+		</div> <!--end of sidebar div-->
+		
+		<div id="content">
+		<span class="arrow_bullet">></span>
+		<span class="post_title">Classes v. Modules</span>
+		<br>
+		<span class= "tab" class="post_date">July 13, 2014</span>
+		<p> <span class="post_content"></span></p>
+		
+		<p>Modules and Classes are both Object-Oriented Programming tools.  Both modules and classes store methods, and they look fairly similar.  Modules, however, do not create object, but rather they simply define behavior.  Modules, therefore, can be thought of like libraries of beviours, or chunks of reusable code, that can be called on to create a program.</p>
+
+		<p>In my research of Modules and Classes, I found two keywords that came up over and over for Modules: <span id="emphasis">Namespacing</span> and <span id="emphasis">Mixins</span>.</p>
+
+		<ul>
+			<li>Namespacing does kind of what it sounds like - it creates separate spaces for naming.  Ok, maybe that doesn't sound like anything.  What I mean is that you can have a method of the same name stored in different modules (the spaces) without causing confusion.  <a href="http://rubymonk.com/learning/books/1-ruby-primer/chapters/35-modules/lessons/80-modules-as-namespaces">Ruby Monk</a> compares the use of Modules to a filesystem in which different files of the same name can be stored in different folders.  The example I liked the best is from the <a href="http://ruby-doc.com/docs/ProgrammingRuby/html/tut_modules.html">Pragmatic Programmer's Guide.</a>  This guide uses the example in which the method #sin could be defined in a module Trig of trigonomic functions and another method #sin could be defined in a module Action of good and bad (sins) behaviors.  If the two #sin methods are stored in separate spaces, they can be called according to the modules using <span class="block">Trig.sin</span> and <span class="block">Action.sin</span></li>
+			<br>
+			<li>Mixins allow for modules to be included (by using the word "include") within Classes.  This is where the library or toolbox or filing cabinet (however you want to think of it) of re-usable code comes in to play.  You can create a Module that stores a set of actions and then invoke them ("include" them) when defining a Class.  The object(s) created by that Class will then be able to perform the actions stored in that Module.  Even though its frowned upon, this allows for multiple inheritances.</li>
+		</ul>
+
+
+
+		<span class="subheader">Example Code:</span>
+			
+		<p>Let's look at a block of code that utilizes the mixin property of Modules within Classes.  In our example, we'll define a Module called Wash.  Within this Module, we store a number of methods that are used when cleaning, such as rinse and lather</p>
+		<span class="block">
+			<p>module Wash<br>
+				<ul>def rinse <br>
+				<ul>puts "run in water for at least 10 seconds"<br></ul>
+				end<br>
+				<br>
+				def lather <br>
+				<ul>puts "scrub with soap for at least 15 seconds"<br></ul>
+				end<br></ul>
+				end
+		</span>
+
+		<p>Now, we can apply this module to two separate classes, to which we could imagine that both the rinse and lather methods could be applied.  Lets wash a dish and a car - which are two objects with very different properties and uses, but two which these methods are relevant.</p>
+
+		<span class="block">
+			<p>class Car
+				<ul>include Wash</ul>
+				end<br>
+				<br></p>
+			<p>class Dish
+				<ul>include Wash</ul>
+				end<br></p>
+		</span>
+
+		<p>In this example, the module and the class to which its applied would have to be in the same file.  The module could be stored in a separate file, and in that case you would have to write</p>
+
+			<span class="block">
+			<p>require "wash"</p></span>
+
+		<p>in order to reference the module.  If the module were stored in a separate folder than the class you would write</p>
+
+			<span class="block">
+			<p>$Load_Path << "." <br>
+			require "wash"</p></span>
+
+		<br>
+
+		<p>Modules allow for an added level of complexity to a program and reduce the amount of repetative work that needs to be done</p>
+
+
+		</div> <!--end of content div-->
+
+
+		<div id= "footer">
+
+		</div><!--end of footer div-->
+	</div><!--end of container div-->
+	</body>
+</html>
