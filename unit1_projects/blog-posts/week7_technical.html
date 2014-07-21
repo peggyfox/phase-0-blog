@@ -1,0 +1,73 @@
+<!doctype html> 
+<html>
+	<head>
+	<link type="text/css" rel="stylesheet" href="stylesheets/solochallenge2.css"/>
+		<title>Classes v. Modules</title>
+	</head>
+	
+	<body>
+	<div id="header">
+		
+		</div> <!--end of header div-->
+
+		<div id="container">
+		
+		<div id="sidebar">
+			<div id="sidebar_img"> 
+				<img class="portrait" src="https://lh3.googleusercontent.com/-0S54vPvOk1I/UsSuAxBGvYI/AAAAAAAAA6c/vy6kvBfVsIc/s874-no/IMG_0462+-+Copy.JPG"/>
+			</div> 
+			<div id="bio">
+				<p>
+				<em>This blog consists of cultural and technical reflections as I progress through </em><a href="http://www.devbootcamp.com">Dev Bootcamp</a>.
+				</p>
+
+			</div>
+		</div> <!--end of sidebar div-->
+		
+		<div id="content">
+		<span class="arrow_bullet">></span>
+		<span class="post_title">SQL v. NoSQL</span>
+		<br>
+		<span class= "tab" class="post_date">July 18, 2014</span>
+		<p> <span class="post_content"></span></p>
+		
+		<p>The difference between SQL and NoSQL is relational versus non-relational databases, respectively.  Relational databases store information in tables whereas non-relational databases store data in four different data types: document databases, key - value pairs, graphs (of networks), and wide-column stores.  Both structures seem to have merits based on the project and the type of data you're working with.  Since I am already more familiar with relational databases, I am looking forward to comparing them to and understanding better non-relational databases.</p>
+
+		<p>As my background is in data analysis and Geographic Information Systems, I have previous experience in working with databases, and specifically in storing and manipulating data that is stored in table format.  Having worked with the table-format, I have an appreciation for how this structure lends itself to visualizing, querying, and organizing large amounts of data.  But, I also know well the frustrations that come with trying to fit complex data sets within this rigid format.  Relational databases also require a lot of up-front design to ensure proper schema structure.  Once your schema is designed and you start putting the data into your database, it can be difficult to alter the schema and get new data in after initialization.</p>
+
+		<p>Jeff Cogswell has a <a href="http://news.dice.com/2012/07/16/sql-vs-nosql-which-is-better/">great article in Business Inteligence</a> that discusses the arguments for and against SQL and NoSQL.  Jeff has 20+ years experience programming in SQL and additional experience in NoSQL.  Since I've been at this for much less time, I'm not going to attempt to include the same level of depth to my analysis as he, but his article in itself is worth reading.  I would like to delve more into his main point that there are situations in which the data lends itself better to a relational database and other where the work is more suited to a non-relational database.  SQL may not be inherently better than NoSQL, or visa versa, but each has its stregths given the task at hand.</p>
+
+		<h3><span class="arrow_small">> </span>So, what are the strengths of each?  In which situations might you use one over the other?</h3>
+
+		<h4>NoSQL / Non-relational Databases:</h4>
+		<p>NoSQL, in its nature as unstructured, is great for rapidly changing environments where data structures and quantities are changing quickly.  NoSQL provides a more maleable environment in which changes can be made because of these two main factors:</p>
+
+		<ul>
+			<li>Scalability: With SQL, the scaling is vertical, meaning more servers are required as the database grows.  The advantage with NoSQL is that scaling is horizontal, meaning across servers and that many servers already redistribute automatically.</li>
+			<li>Accomodate change: While with SQL, the schema must be set before entering data, NoSQL allows for easier changes to database structure.</li>
+		</ul>
+
+
+		<h4>SQL / Relational Databases:</h4>
+		<p>You might read the advantages of NoSQL and wonder what's left for SQL?  Just with any positive there is a negative.  The other side of the coin is the benefit of structure offered by SQL.</p>
+
+		<ul>
+			<li>Structured Query Language: This highly developed language is fairly intuitive, making it easy to learn and understand and therefore implement to manage databases.  Non-programmers can pick up SQL pretty easily, so companies can easily built the capacity of their database managers without them needing to understanding more complex programming languages necessarily.</li>
+			<li>Defined Schema: The relational database model relies on a defined structures.  While this can be a hinderance to flexibility, it also helps prevent chaos.  The main benefit here is it is easier to keep your data system reliable and safe.  They are arguably better at handling complex queries because they have a defined structure from which to search.</li>
+			<li></li>
+
+		</ul>
+
+
+		<p>The SQL v. NoSQL debate seems to be a complex one.  So, on a final note, I'd like to reference <a href="http://sql.learncodethehardway.org/book/introduction.html">Zed Shaw of Learn to Code the Hard Way</a>. His take is that programmers like to bash SQL because it lacks the dynamic attributes of newer programming language and object-oriented models.  Shaw argues that nonethless, SQL is everywhere and it will continue to be used for basic to fairly complex projects, so as a programmer, you might as well learn it.  While I am interested in learning SQL, coming from a data analysis background where I am already somewhat familiar with SQL, I am most interested in exploring NoSQL because it is more foreign to me and also because it seems to be gaining ground as the preferred database management system, especially for rapidly growing projects.</p>
+
+
+		</div> <!--end of content div-->
+
+
+		<div id= "footer">
+
+		</div><!--end of footer div-->
+	</div><!--end of container div-->
+	</body>
+</html>
