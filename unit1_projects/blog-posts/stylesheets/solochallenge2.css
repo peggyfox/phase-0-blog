@@ -59,6 +59,8 @@ margin-left:5px;
 padding:5px;
 }
 
+#content img {max-width:300px; text-align: center}
+
 #content a:link {color:grey}
 #content a:active {color:grey}
 #content a:visited {color:grey}

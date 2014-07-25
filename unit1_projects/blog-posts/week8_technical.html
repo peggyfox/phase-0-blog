@@ -1,0 +1,136 @@
+<!doctype html> 
+<html>
+	<head>
+	<link type="text/css" rel="stylesheet" href="stylesheets/solochallenge2.css"/>
+		<title>What is Rails?</title>
+	</head>
+	
+	<body>
+	<div id="header">
+		
+		</div> <!--end of header div-->
+
+		<div id="container">
+		
+		<div id="sidebar">
+			<div id="sidebar_img"> 
+				<img class="portrait" src="https://lh3.googleusercontent.com/-0S54vPvOk1I/UsSuAxBGvYI/AAAAAAAAA6c/vy6kvBfVsIc/s874-no/IMG_0462+-+Copy.JPG"/>
+			</div> 
+			<div id="bio">
+				<p>
+				<em>This blog consists of cultural and technical reflections as I progress through </em><a href="http://www.devbootcamp.com">Dev Bootcamp</a>.
+				</p>
+
+			</div>
+		</div> <!--end of sidebar div-->
+		
+		<div id="content">
+		<span class="arrow_bullet">></span>
+		<span class="post_title">What is Rails?</span>
+		<br>
+		<span class= "tab" class="post_date">July 24, 2014</span>
+		<p> <span class="post_content"></span></p>
+		
+		<p>Rails is the short-hand name for "Ruby on Rails".  While Ruby is the programming lanaguage that runs on Rails, it is not to be confused with the Rails <em>web application development framework</em> that follows the <em>model-view-controller</em> pattern.  Rails makes programming web applications easier and more efficient because it comes equipped with a framework common to the development of most web applications.  It therefore reduces the amount of initial development required by the developer.</p>
+
+		<h3><span class="arrow_small">> </span>Terms: Web Application Development Framework and Model-View Controller</h3>
+
+		<h4>What is a Web Development Framework?</h4>
+		<p> The definition straight <a href="http://en.wikipedia.org/wiki/Web_application_framework">from Wikepedia</a> defines it as: "a software framework that is designed to support the development of dynamic websites, web applications, web services and web resources. The framework aims to alleviate the overhead associated with common activities performed in web development. For example, many frameworks provide libraries for database access, templating frameworks and session management, and they often promote code reuse."</p>
+		<p>This is a pretty succinct definition that discusses what Rails is and does and a few of its key components.  When we take a closer look at Rails below, we'll talk about what the libraries, templating frameworks, and session management provided in the framework actually look like.</p>
+
+		<h4>What is the Model-View-Controller Pattern?</h4>
+		<p>The Model-View-Controller pattern basically dicates how the web application framework is designed.  Again, <a href="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">from Wikepedia</a>: "Model-view-controller (MVC) is a software architectural pattern for implementing user interfaces. It divides a given software application into three interconnected parts, so as to separate internal representations of information from the ways that information is presented to or accepted from the user."</p>
+		<p>In some ways you can think of the Model-View-Controller pattern as a division of labor with specified roles and responsibilities.  In the visual representation below, the roles, relationships, and interactions are depicted in relation to the user.</p>
+		<p><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MVC-Process.svg/500px-MVC-Process.svg.png"></p>
+
+		<ul>
+			<li>The <span class="emphasis">controller</span> is basically the Manager.  It takes user inputs, data submissions and basically everything that comes in to the application through the browser, and decides what to do with it.  It communicates messages to the model and then returns what it receives from the model back to the user.</li>
+			<li>The <span class="emphasis">model</span> manages the application's data, logic, and rules.  It takes in the code and gives you something back - this requires a whole process of interacting with the database to store and validate the data (all of which is dictated by the web application framework).  The model is what does the heavy-lifting.</li>
+			<li>The <span class="emphasis">view</span> is the output from the model to the user, presented using HTML, CSS, and JavaScript.</li>
+			<li>The <span class="emphasis">user</span> interacts with the application and has the ability to input and retrieve information.</li>
+		</ul>
+
+		<h3><span class="arrow_small">> </span>What does the Rails framework look like?</h3>
+		<p><a href="http://guides.rubyonrails.org/getting_started.html">The Rails Guide</a> walks you through how to make a simple web application using Rails and it is worth at least reading through to get a better idea of how Rails works.  I'll be using this tutorial to explain what the Rails web development framework looks like and how you interact with it to get a new app up and running.</p>
+
+		<p>First, when you create a new application, Rails will auto-generate a number of files and folders.  These pre-designed documents and the structure in which they reside (the folders) are the web application ramework of Rails.  The basic structure includes the following files and folders:
+			<ul>
+				<li><span class="emphasis">app/</span><br>
+					includes the models (app/models/), views (app/views/), and controllers (app/controllers/).  This is where the developer does the majority of their work.</li>
+				<li><span class="emphasis">bin/</span><br></li>
+				<li><span class="emphasis">config/</span></li>
+				<li><span class="emphasis">config.ru</span></li>
+				<li><span class="emphasis">db/</span></li>
+				<li><span class="emphasis">Gemfile; Gemfile.lock</span></li>
+				<li><span class="emphasis">lib/</span></li>
+				<li><span class="emphasis">log/</span></li>
+				<li><span class="emphasis">public/</span></li>
+				<li><span class="emphasis">Rakefile/</span></li>
+
+				<li><span class="emphasis">README.doc</span></li>
+				<li><span class="emphasis">test/</span></li>
+				<li><span class="emphasis">tmp/</span></li>
+				<li><span class="emphasis">vendor/</span></li>
+			</ul>
+
+		<p>The following are the basic steps for setting up a new app.  I will show the basic commands without much explanation so that you can get an idea of how some of the files and folders in the framework are being used.</p>
+
+			<ol>
+				<li>Create a new app called blog<br>
+					<span class="block">$rails new blog</span></li><br>
+				<li>To get the app running, start the server<br>
+					<span class="block">$bin/rails server</span></li><br>
+				<li>Create a controller and a view called welcome<br>
+					<span class="block">$bin/rails generate welcome index</span><br>
+					<br>
+					The following will then run in the command line, creating a number of files in your app/ folder:<br>
+					<span class="block">create  app/controllers/welcome_controller.rb<br>
+						 route  get 'welcome/index'<br>
+						invoke  erb<br>
+						create    app/views/welcome<br>
+						create    app/views/welcome/index.html.erb<br>
+						invoke  test_unit<br>
+						create    test/controllers/welcome_controller_test.rb<br>
+						invoke  helper<br>
+						create    app/helpers/welcome_helper.rb<br>
+						invoke    test_unit<br>
+						create      test/helpers/welcome_helper_test.rb<br>
+						invoke  assets<br>
+						invoke    coffee<br>
+						create      app/assets/javascripts/welcome.js.coffee<br>
+						invoke    scss<br>
+						create      app/assets/stylesheets/welcome.css.scss
+					</span></li><br>
+				<li>To set up your homepage, open the config/routes.rb file in a text editor.  Uncomment the line that says root 'welcome#index' so that it looks like:<br><span class="block">Rails.application.routes.draw do<br>
+					  get 'welcome/index'<br>
+					 
+					  # The priority is based upon order of creation: <br>
+					  # first created -> highest priority.<br>
+					  #<br>
+					  # You can have the root of your site routed with "root"<br>
+					  root 'welcome#index'<br>
+					  #</span></li><br>
+				<li>To begin working on your homepage, open the index file (app/views/welcome/index.html.erb) in a text editor.  You can begin by typing basic HTML that will present on the homepage.<br>
+					<span class="block"><xmp><h2><font color="red">Check out my awesome new webpage!</font></h2></xmp></span>
+
+					If you launch the server again and navigate to <a href="http://localhost:3000">http://localhost:3000</a> in your browser, the HTML that you entered should appear on the page like so:<br>
+					<h2><font color="red">Check out my awesome new webpage!</font></h2></li>
+			</ol
+
+		<h3><h3><span class="arrow_small">> </span>The Other Frameworks</h3>
+
+		<p>Rails is not the only web application development framework for Ruby, but it is the most popular.  Other frameworks include: Sinatra, Merb, and Camping.  To gain even futher insigths into what Rails is, it may be helpful to research some of these other frameworks and how they differ from Rails.  Another suggestion is to research, for example, the different frameworks for running Java, as there are many more commonly used Java frameworks, each with their own design.</p>
+
+
+
+
+		</div> <!--end of content div-->
+
+
+		<div id= "footer">
+
+		</div><!--end of footer div-->
+	</div><!--end of container div-->
+	</body>
+</html>
