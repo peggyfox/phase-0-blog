@@ -1,0 +1,59 @@
+#header {
+	background: black;
+	color: white;
+	padding:10px;
+	max-width:1000px;
+	text-align:center;
+	margin-bottom:10px;
+}
+
+#container {
+	width:1000px;
+}
+
+#sidebar {
+	color:darkgrey;
+	text-align:center;
+	width: 200px;
+	float:left;
+	padding: 5px;
+	text-decoration: none;
+	border:none;
+}
+
+#container a:link {color:black; text-decoration: none;}
+#container a:active {color:black;text-decoration: none;}
+#container a:visited {color:black;text-decoration: none;}
+#container a:hover {color:lightgrey; text-decoration: none;}
+
+#content {
+	float:right;
+	width: 750px;
+	padding: 10px;
+}
+
+#code {
+	border:3px solid black;
+	padding:10px;
+	margin:10px;
+}
+
+#code h3
+{font-family: Arial Narrow;}
+
+#resources {
+	border:3px dashed black;
+	padding:10px;
+	margin:10px;
+}
+
+#footer {
+	background: black;
+	color: white;
+	padding:10px;
+	max-width:1000px;
+	clear:both;
+}
+
+#resources h3
+{font-family: Arial Narrow;}
