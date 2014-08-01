@@ -1,0 +1,98 @@
+<!doctype html> 
+<html>
+	<head>
+	<link type="text/css" rel="stylesheet" href="stylesheets/solochallenge2.css"/>
+		<title>Writing Good Questions</title>
+	</head>
+	
+	<body>
+	<div id="header">
+			
+		</div> <!--end of header div-->
+
+		<div id="container">
+		
+		<div id="sidebar">
+			<div id="sidebar_img"> 
+				<img class="portrait" src="https://lh3.googleusercontent.com/-0S54vPvOk1I/UsSuAxBGvYI/AAAAAAAAA6c/vy6kvBfVsIc/s874-no/IMG_0462+-+Copy.JPG"/>
+			</div> 
+			<div id="bio">
+				<p>
+				<em>This blog consists of cultural and technical reflections as I progress through </em><a href="http://www.devbootcamp.com">Dev Bootcamp</a>.
+				</p>
+
+			</div>
+	
+		</div> <!--end of sidebar div-->
+		
+		<div id="content">
+		<span class="arrow_bullet">></span>
+		<span class="post_title">Writing Good Questions</span>
+		<br>
+		<span class= "tab" class="post_date">July 30, 2014</span>
+		<p>
+		<span class="post_content">Asking good questions is key to getting the support you need.  In this post I'll talk about some strategies for asking good questions and how to apply this advice.</p>
+
+		<h3><span class="arrow_small">> </span>How to Ask Good Questions</h3>
+
+			<h4>Basic template for a good question or bug report</h4>
+
+			<ul>
+				<li>Informative title that indicates the problem and may also include the programming language</li>
+				<li>Context: You will need to include the programming language, probably the operating system and any other constraints.</li>
+				<li>What you did (steps to reproduce): This is where you explain what the code looks like and where your problem is occuring.  You should also explain what you have already done to try to answer your own question.  You may need to explain you're bigger-picture goal so that people can understand why you're trying to do what you're doing (they may advise you to take another course to meet your end goal).  This is where you will want to include sample code.</li>
+				<li>What did you expected to happen: Explain your intended output and what you expected to result from the code.</li>
+				<li>What happened instead: This may include error messages.</li>
+			</ul>
+
+			<h4>Tips</h4>
+
+			<ul>
+				<li>Imagine you're trying to answer the question.  If you review your question from this standpoint, you may come across additional items that need clarification.  You may also see ways that the question may be confusing to other people.  Are there extraneous details that may lead the responder to focus on something other than what's central to the problem? </li>
+				<li>Be specific and be concise: This can be a hard balance to strike as you want to provide as much information as possible to get your desired answer without people asking you questions about things you've already tried.  BUT, you also want the questions to be short enough that you don't lose you're audience.  You will probably need to write out or think out what you're asking and then proofread/re-formulate your question so that you are providing the necessary information and so that you aren't confusing yourself or the person or people who may respond to your question.</li>
+				<li>Proofread: We all make typos and spelling mistakes.  Clean these up to prevent distractions and so that you're responder doesn't have to do additional work to decipher your grammar.</li>
+			</ul>
+
+		<h3><span class="arrow_small">> </span>Examples: How well do they follow the template?</h3>
+
+		<p>Below we'll look at two questions from Stack Overflow and evaluate them on how well they meet the four criteria outlined in the template above.  While neither example is perfect, the first provides very little explanation while the second is much more explicit as to what is being attempted, what has been tried, and where (s)he is struggling.  The second example also indicates that not all criteria in the template are essential for the question to be effective and for there to be sufficient explanation.</p>
+
+		<h4>Example 1</h4>
+		<p>Title: How to use push with sub-arrays?</p>
+		<img src="https://github.com/peggyfox/phase-0-unit-3/raw/master/week-7/imgs/questions_example1.png"/>
+			<ul>
+				<li><span class="emphasis">Informative title:</span> While the title is specific and concise to the problem, it does not specifically mention JavaScript.</li>
+				<li><span class="emphasis">Context:</span> There is no context given, but this may be unnessary given that the question deals strictly with code.  However, it would be useful to mention at least somewhere (other than just in the tag) that this problem is with JavaScript.</li>
+				<li><span class="emphasis">What is your goal?</span> The goal is not explained.  Some explains of what the author is trying to accomplish are provided, but does not make explicit their desired output.
+					<br><span class="emphasis">What have you already tried?</span> The author does not say what (s)he has tried.  (S)he asks if something is possible, but does not say that (s)he has tried to run the code and found that it does not pass.
+					<br><span class="emphasis">Sample code:</span> The sample code shows what the author has done with minimal comments for context.</li>
+				<li><span class="emphasis">What did you expect?</span> Since there is no explanation as to what has been tried or to what the goal is, we have to infer expectation from the sample code.</li>
+				<li><span class="emphasis">What happened instead?</span> </li>
+			</ul>
+
+		<h4>Example 2</h4>
+		<p>Title: How to get the index of an object inside an array of objects?</p>
+		<img src="https://github.com/peggyfox/phase-0-unit-3/raw/master/week-7/imgs/questions_example2.png"/>
+			<ul>
+				<li><span class="emphasis">Informative title:</span> Similar to Example 1, the title is specific and concise to the problem but it does not specifically mention JavaScript.</li>
+				<li><span class="emphasis">Context:</span> The first line of the question makes it explicit that s(he) is working in JavaScript.  No other context is given, but as stated for Example 1, it may be unneccessary.</li>
+				<li><span class="emphasis">What is your goal?</span> The goal is stated in the question at the bottom - s(he) wants to know the index of the object without having to define the id property.
+					<br><span class="emphasis">What have you already tried?</span> The author explains how s(he) is currently approaching the problem and how they are doing it.  S(he) also explains where the problem is occuring when using #sort.
+					<br><span class="emphasis">Sample code:</span> There is some sample code to accompany the explanation.</li>
+				<li><span class="emphasis">What did you expect?</span> S(he) does not propose an alternative solution, so it is not clear how they expect it might be accomplished.</li>
+				<li><span class="emphasis">What happened instead?</span> Again, there isn't an explanation for what an alternative solution might look like, but it is clear what s(he) is ultimately trying to accomplish.</li>
+			</ul>
+
+
+		<h3><span class="arrow_small">> </span>Resources</h3>
+
+		<ul>
+			<li><a href="http://stackoverflow.com/help/how-to-ask">Stackoverflow: How do I ask good questions?</a> (also see the links at the bottom of this article for additional resources)</li>
+			<li><a href="http://www.joelonsoftware.com/articles/fog0000000029.html">Joel on Software: Painless Debugging</a></li>
+		</ul>
+
+
+
+	</div><!--end of container div-->
+	</body>
+</html>
