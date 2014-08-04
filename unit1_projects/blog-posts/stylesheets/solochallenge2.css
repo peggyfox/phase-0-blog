@@ -204,9 +204,11 @@ font-weight:bold;}
 #container {width:600px;}
 #tech{width:600px;}
 #cultural {margin: 0 auto; float: none; clear: both;}
+#content {width: 600px; margin: 0 auto;}
 }
 
 @media screen and (max-width:599px) {
-#container {width:300px;}
+#container, #content {width:300px;}
+#content {width: 300px; margin: 0 auto;}
 }
 
