@@ -1,0 +1,141 @@
+<!doctype html> 
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheets/solochallenge2.css"/>
+		<link rel="stylesheet" href="font-awesome-4.1.0/css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
+		<title>GIT</title>
+
+	</head>
+	
+	<body>
+	<div id="border">
+			
+	</div> <!--end of border div-->
+
+	<div id="header">
+	
+		<div id="home_left">
+			<p><span class="title"><a href="http://peggyfox.github.io">Peggy Fox</a></span></p>
+		</div> <!--end of home_left div-->	
+
+		<div id="home_right">
+				<ul>
+					<li> </li>
+					<li><span class="arrow_bullet"><</span></li>
+					<li><a href="www.linkedin.com/in/peggyfox1/"><i class="fa fa-linkedin fa-lg"></i></a></li>
+					<li><a href="https://github.com/peggyfox"><i class="fa fa-github fa-lg"></i></a></li>
+					<li><a href="https://twitter.com/PFoxUP"><i class="fa fa-twitter fa-lg"></i></a></li>
+					<li><a href="https://www.facebook.com/peggy.fox.1671"><i class="fa fa-facebook fa-lg"></i></a></li>
+					<li><span class="arrow_bullet">></span></li>
+				</ul>
+		</div>
+
+	</div> <!--end of header div-->
+		
+		<div id="content">
+		<p><font color="white">h</font></p>
+		<span class="arrow_bullet">></span>
+		<span class="title">GIT</span>
+		<br>
+
+	<div id="content">
+
+		<div id="code">
+
+			<h3>Definitions</h3>
+
+			<ul>
+			<li>add <br>
+			add file contents to the index.  This stages a file to be committed, but does not actually commit it.</li>
+			<br>
+			<li>branch<br>
+			list, create, or delete branches.</li>
+			<br>
+			<li>checkout<br>
+			checkout and swith to a branch.  This can be used to revert a file to its most recent commited state.</li>
+			<br>
+			<li>clone<br>
+			clone a repository into a new directory: basically copy and paste</li>
+			<br>
+			<li>commit<br>
+			record changes to the repository.  This makes a new "blob" of your file - a new version that you will be able to refer back to.</li>
+			<br>
+			<li>fetch<br>
+			download changes from another repository and merge them with the branched repository on your computer.</li>
+			<br>
+			<li>log<br>
+			show commit logs, like an activity log</li>
+			<br>
+			<li>merge<br>
+			join two or more development histories - allows combination of 2+ versions</li>
+			<br>
+			<li>pull<br>
+			fetch from and merge with another repository or a local branch.</li>
+			<br>
+			<li>push<br>
+			update remote refs along with associated objects.  like git fetch and git merge together</li>
+			<br>
+			<li>reset<br>
+			reset most recent commit to the specified state</li>
+			<br>
+			<li>rm<br>
+			remove files from the working tree and the index.</li>
+			<br>
+			<li>status<br>
+			show the working tree status</li>
+			<br>
+		</ul>
+
+		</div>
+
+		<div id="code">
+
+		<h3>Step-by-Steps</h3>
+
+		<p>Push files to a remote repository</p>
+			<ol>	
+				<li>Navigate to branch to be committed.</li>
+				<li>Git Status</li>
+				<li>Add files to stage them to be committed "git add *.html" (to add everything of the same file type")</li>
+				<li>"git commit -m "note""</li>
+				<li>"git push" - if pushing for the first time type "git -u origin master"</li>
+			</ol>
+
+		<p>Fetch changes</p>
+			<ol>
+				<li>Navigate to the master branch (i.e. phase_0_unit_1).  Check to make sure it is the master by typing git branch in the terminal</li>
+				<li>check the current remote.  type "git remote -v"</li>
+				<li>Fetch the changes.  type "git fetch upstream". You can check that the changes are stored on your local branch by typing "git branch -va"</li>
+				<li>Merge the changes with your master branch. type "git merge upstream/master"</li>
+				<li>Resolve any conflicts with "git status" or "git diff"</li>
+				<li>Commit changes: "git commit -m "commit one""</li>
+			</ol>
+
+
+		<p>Commit locally<br>
+		Do everything from Push files to a remote repository, just skip the last step where you'd push to the repository.</p>
+
+		</div> <!--end of code div --> 
+
+		<div id="resources">
+		<h3>Additional Resources</h3>
+
+		<ul>
+			<li><a href="http://stackoverflow.com/questions/11394349/upstream-pulls-with-the-github-desktop-client">Upstream pulls with the Github desktop client</a></li>
+			<li><a href="https://help.github.com/articles/syncing-a-fork">Syncing a Fork</a></li>
+		</ul>
+
+
+		</div> <!--end of resources div-->	
+			<p>Last Updated on July 27th, 2014 by Peggy Fox</p>
+
+		</div> <!--end of content div-->	
+
+	
+	<div id= "footer">
+
+	</div><!--end of footer div-->
+
+	</body>
+</html>
