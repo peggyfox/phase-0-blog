@@ -85,7 +85,8 @@ background: #FFFFFF;
 
 #content { width:880px;
 margin:10px; 
-padding: 10px;}
+padding: 10px;
+margin: 0 auto;}
 
 #cultural {
 	width:280px;
@@ -201,14 +202,12 @@ font-weight:bold;}
 }
 
 @media screen and (min-width:600px) and (max-width: 899px) {
-#container {width:600px;}
+#container, #content {width:600px;}
 #tech{width:600px;}
 #cultural {margin: 0 auto; float: none; clear: both;}
-#content {width: 600px; margin: 0 auto;}
 }
 
 @media screen and (max-width:599px) {
 #container, #content {width:300px;}
-#content {width: 300px; margin: 0 auto;}
 }
 
